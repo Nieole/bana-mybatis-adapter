@@ -3,9 +3,9 @@ package org.bana.adapter;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.bana.entity.Role;
 
-public class RoleAdapter extends MybatisAdapter<Role,String>{
+public class MybatisRoleAdapter extends MybatisAdapter<Role,String>{
 
-  protected RoleAdapter(
+  protected MybatisRoleAdapter(
       BaseMapper<Role> mapper) {
     super(mapper);
   }

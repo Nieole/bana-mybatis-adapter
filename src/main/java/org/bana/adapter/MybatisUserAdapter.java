@@ -3,9 +3,9 @@ package org.bana.adapter;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.bana.entity.User;
 
-public class UserAdapter extends MybatisAdapter<User,String>{
+public class MybatisUserAdapter extends MybatisAdapter<User,String>{
 
-  protected UserAdapter(
+  protected MybatisUserAdapter(
       BaseMapper<User> mapper) {
     super(mapper);
   }
