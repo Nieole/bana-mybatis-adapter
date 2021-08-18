@@ -5,7 +5,7 @@ import org.bana.mybatis.entity.Permission;
 
 public class PermissionAdapter extends MybatisAdapter<Permission,String> {
 
-  protected PermissionAdapter(
+  public PermissionAdapter(
       BaseMapper<Permission> mapper) {
     super(mapper);
   }

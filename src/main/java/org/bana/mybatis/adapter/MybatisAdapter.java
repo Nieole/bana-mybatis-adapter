@@ -11,7 +11,7 @@ public abstract class MybatisAdapter<DATA extends BaseEntity<ID>,ID extends Seri
     DataAdapter<DATA,ID> {
   private final BaseMapper<DATA> mapper;
 
-  protected MybatisAdapter(BaseMapper<DATA> mapper) {
+  public MybatisAdapter(BaseMapper<DATA> mapper) {
     this.mapper = mapper;
   }
 

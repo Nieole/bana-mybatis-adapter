@@ -5,7 +5,7 @@ import org.bana.mybatis.entity.User;
 
 public class UserAdapter extends MybatisAdapter<User,String>{
 
-  protected UserAdapter(
+  public UserAdapter(
       BaseMapper<User> mapper) {
     super(mapper);
   }
