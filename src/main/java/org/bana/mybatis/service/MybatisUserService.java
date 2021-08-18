@@ -4,18 +4,18 @@ import java.io.Serializable;
 import org.bana.adapter.DataAdapter;
 import org.bana.entity.RoleEntity;
 import org.bana.mybatis.entity.User;
-import org.bana.service.AbstractRoleService;
-import org.bana.service.AbstractUserService;
+import org.bana.service.RoleService;
+import org.bana.service.UserService;
 import org.casbin.jcasbin.main.Enforcer;
 import org.springframework.transaction.annotation.Transactional;
 
 @Transactional
-public class UserService extends AbstractUserService<User,String> {
+public class MybatisUserService extends UserService<User,String> {
 
-  public <R extends RoleEntity<RI>, RI extends Serializable> UserService(
+  public <R extends RoleEntity<RI>, RI extends Serializable> MybatisUserService(
       DataAdapter<User, String> dataAdapter,
       Enforcer enforcer,
-      AbstractRoleService<R, RI> roleService) {
+      RoleService<R, RI> roleService) {
     super(dataAdapter, enforcer, roleService);
   }
 
