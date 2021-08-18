@@ -1,7 +1,7 @@
-package org.bana.adapter;
+package org.bana.mybatis.adapter;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import org.bana.entity.Permission;
+import org.bana.mybatis.entity.Permission;
 
 public class PermissionAdapter extends MybatisAdapter<Permission,String> {
 

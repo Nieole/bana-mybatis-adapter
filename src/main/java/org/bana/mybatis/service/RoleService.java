@@ -1,14 +1,16 @@
-package org.bana.service;
+package org.bana.mybatis.service;
 
 import java.io.Serializable;
 import org.bana.adapter.DataAdapter;
 import org.bana.entity.PermissionEntity;
-import org.bana.entity.Role;
+import org.bana.mybatis.entity.Role;
+import org.bana.service.AbstractPermissionService;
+import org.bana.service.AbstractRoleService;
 import org.casbin.jcasbin.main.Enforcer;
 import org.springframework.transaction.annotation.Transactional;
 
 @Transactional
-public class RoleService extends AbstractRoleService<Role,String>{
+public class RoleService extends AbstractRoleService<Role,String> {
 
   public <E extends PermissionEntity<I>, I extends Serializable> RoleService(
       DataAdapter<Role, String> dataAdapter,

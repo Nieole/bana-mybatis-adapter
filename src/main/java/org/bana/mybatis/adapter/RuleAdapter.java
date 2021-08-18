@@ -1,9 +1,10 @@
-package org.bana.adapter;
+package org.bana.mybatis.adapter;
 
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import io.vavr.collection.List;
-import org.bana.entity.MybatisRule;
-import org.bana.repository.MybatisRuleRepository;
+import org.bana.adapter.Adapter;
+import org.bana.mybatis.entity.MybatisRule;
+import org.bana.mybatis.repository.MybatisRuleRepository;
 import org.casbin.jcasbin.model.Assertion;
 import org.springframework.util.StringUtils;
 

@@ -1,8 +1,9 @@
-package org.bana.entity;
+package org.bana.mybatis.entity;
 
 import com.baomidou.mybatisplus.annotation.TableId;
+import org.bana.entity.PermissionEntity;
 
-public class Permission extends PermissionEntity<String>{
+public class Permission extends PermissionEntity<String> {
   @TableId
   private String id;
 

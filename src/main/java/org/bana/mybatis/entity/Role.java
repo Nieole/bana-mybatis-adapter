@@ -1,8 +1,9 @@
-package org.bana.entity;
+package org.bana.mybatis.entity;
 
 import com.baomidou.mybatisplus.annotation.TableId;
+import org.bana.entity.RoleEntity;
 
-public class User extends UserEntity<String>{
+public class Role extends RoleEntity<String> {
   @TableId
   private String id;
 

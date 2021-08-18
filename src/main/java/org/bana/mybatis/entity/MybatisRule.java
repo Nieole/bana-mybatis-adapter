@@ -1,8 +1,9 @@
-package org.bana.entity;
+package org.bana.mybatis.entity;
 
 import com.baomidou.mybatisplus.annotation.TableId;
+import org.bana.entity.CasbinRule;
 
-public class Role extends RoleEntity<String>{
+public class MybatisRule extends CasbinRule<String> {
   @TableId
   private String id;
 
@@ -12,10 +13,5 @@ public class Role extends RoleEntity<String>{
 
   public void setId(String id) {
     this.id = id;
-  }
-
-  @Override
-  public String id() {
-    return id;
   }
 }

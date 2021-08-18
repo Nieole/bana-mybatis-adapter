@@ -1,12 +1,14 @@
-package org.bana.adapter;
+package org.bana.mybatis.adapter;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import io.vavr.collection.List;
 import java.io.Serializable;
 import java.util.Collection;
+import org.bana.adapter.DataAdapter;
 import org.bana.entity.BaseEntity;
 
-public abstract class MybatisAdapter<DATA extends BaseEntity<ID>,ID extends Serializable> implements DataAdapter<DATA,ID> {
+public abstract class MybatisAdapter<DATA extends BaseEntity<ID>,ID extends Serializable> implements
+    DataAdapter<DATA,ID> {
   private final BaseMapper<DATA> mapper;
 
   protected MybatisAdapter(BaseMapper<DATA> mapper) {

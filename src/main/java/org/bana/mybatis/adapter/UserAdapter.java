@@ -1,7 +1,7 @@
-package org.bana.adapter;
+package org.bana.mybatis.adapter;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import org.bana.entity.User;
+import org.bana.mybatis.entity.User;
 
 public class UserAdapter extends MybatisAdapter<User,String>{
 
