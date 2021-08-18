@@ -3,9 +3,9 @@ package org.bana.adapter;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.bana.entity.Permission;
 
-public class MybatisPermissionAdapter extends MybatisAdapter<Permission,String> {
+public class PermissionAdapter extends MybatisAdapter<Permission,String> {
 
-  protected MybatisPermissionAdapter(
+  protected PermissionAdapter(
       BaseMapper<Permission> mapper) {
     super(mapper);
   }

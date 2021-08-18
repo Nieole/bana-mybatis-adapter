@@ -7,11 +7,11 @@ import org.bana.repository.MybatisRuleRepository;
 import org.casbin.jcasbin.model.Assertion;
 import org.springframework.util.StringUtils;
 
-public class MybatisRuleAdapter implements Adapter<MybatisRule> {
+public class RuleAdapter implements Adapter<MybatisRule> {
   private final MybatisRuleRepository repository;
   private volatile boolean isFiltered = true;
 
-  public MybatisRuleAdapter(MybatisRuleRepository repository) {
+  public RuleAdapter(MybatisRuleRepository repository) {
     this.repository = repository;
   }
 
